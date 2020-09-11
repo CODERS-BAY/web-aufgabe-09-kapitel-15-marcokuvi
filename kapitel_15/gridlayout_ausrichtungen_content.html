@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gridlayout</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		div {
+			width: 15rem;
+			height: 15rem;
+			display: grid;
+			grid-template-columns: 6rem 6rem;
+			grid-template-rows: 6rem 6rem;
+			border: 3px solid #3f4f97;
+			background: white;
+		}
+
+		.align-content-start {
+			align-content: start;
+		}
+
+		.align-content-end {
+			align-content: end;
+		}
+
+		.align-content-center {
+			align-content: center;
+		}
+
+		.justify-content-start {
+			justify-content: start;
+		}
+
+		.justify-content-end {
+			justify-content: end;
+		}
+
+		.justify-content-center {
+			justify-content: center;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		p:nth-child(1) {
+			background: #a9e8e3;
+		}
+
+		p:nth-child(2) {
+			background: #87c6c1;
+		}
+
+		p:nth-child(3) {
+			background: #6ca49f;
+		}
+
+		p:nth-child(4) {
+			background: #4f7e79;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<h1>align-content: start</h1>
+		<div class="align-content-start">
+			<p>Eins</p>
+			<p>Zwei</p>
+			<p>Drei</p>
+			<p>Vier</p>
+		</div>
+	</section>
+	<section>
+		<h1>align-content: end</h1>
+		<div class="align-content-end">
+			<p>Eins</p>
+			<p>Zwei</p>
+			<p>Drei</p>
+			<p>Vier</p>
+		</div>
+	</section>
+	<section>
+		<h1>align-content: center</h1>
+		<div class="align-content-center">
+			<p>Eins</p>
+			<p>Zwei</p>
+			<p>Drei</p>
+			<p>Vier</p>
+		</div>
+	</section>
+	<section>
+		<h1>justify-content: start</h1>
+		<div class="justify-content-start">
+			<p>Eins</p>
+			<p>Zwei</p>
+			<p>Drei</p>
+			<p>Vier</p>
+		</div>
+	</section>
+	<section>
+		<h1>justify-content: end</h1>
+		<div class="justify-content-end">
+			<p>Eins</p>
+			<p>Zwei</p>
+			<p>Drei</p>
+			<p>Vier</p>
+		</div>
+	</section>
+	<section>
+		<h1>justify-content: center</h1>
+		<div class="justify-content-center">
+			<p>Eins</p>
+			<p>Zwei</p>
+			<p>Drei</p>
+			<p>Vier</p>
+		</div>
+	</section>
+</body>
+
+</html>

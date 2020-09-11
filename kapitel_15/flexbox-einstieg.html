@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox</title>
+  <style>
+    html {
+      font: 300%/1.4 sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #555;
+    }
+    section > div {
+      padding: 1rem;
+    }
+    .eins {
+      background-color: lightgreen;
+    }
+    .zwei {
+      background-color: #90eeeb;
+    }
+    .drei {
+      background-color: #909bee;
+    }
+    section {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="eins"><strong>1</strong></div>
+    <div class="zwei"><strong>2</strong></div>
+    <div class="drei"><strong>3</strong></div>
+  </section>
+
+</body>
+</html>

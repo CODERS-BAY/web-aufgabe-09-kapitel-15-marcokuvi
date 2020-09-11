@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Flexbox</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font: 100% sans-serif;
+    }
+
+    .navi ul {
+      max-width: 40rem;
+      margin: auto;
+      padding: 0;
+      background: #eee;
+      list-style: none;
+      border-radius: 0.2rem;
+      /* Flexbox-Darstellung aktivieren */
+      display: flex;
+      /*Leerraumverteilung bestimmen */
+      justify-content: space-between;
+    }
+
+    .navi li {
+      border: 1px solid black;
+      border-radius: 0.2em;
+    }
+
+    .navi a {
+      text-decoration: none;
+      color: #222;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      display: block;
+    }
+
+    .navi a:hover {
+      color: #ccc;
+      background-color: #222;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navi">
+    <ul>
+      <li class="start"><a href="#">Start</a></li>
+      <li class="aktuell"><a href="#">Aktuell</a></li>
+      <li class="produkte"><a href="#">Produkte</a></li>
+      <li class="service"><a href="#">Service</a></li>
+      <li class="kontakt"><a href="#">Kontakt</a></li>
+    </ul>
+  </nav>
+</body>

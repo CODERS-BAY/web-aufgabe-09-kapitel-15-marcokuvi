@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gridlayout</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body > * {
+			margin: 4px;
+			padding: 5px;
+			border-radius: 7px;
+		}
+
+		body {
+			font: 120% sans-serif;
+			max-width: 80rem;
+			margin: auto;
+			margin-top: 2rem;
+			background: #8fcb8f;
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			grid-template-areas:
+			   "kopf kopf"
+			   "navi inhalt"
+			   "seite inhalt"
+			   "fuss fuss";
+		}
+
+		.kopf {
+			background: #038C3E;
+			color: #FFFFCB;
+			grid-area: kopf;
+		}
+
+		.navi {
+			background: #75BF95;
+			grid-area: navi;
+		}
+
+		.inhalt {
+			background: #F2F2F2;
+			grid-area: inhalt;
+		}
+
+		.seite {
+			background: #46A66F;
+			grid-area: seite;
+		}
+
+		.fuss {
+			background: #038C3E;
+			color: #FFFFCB;
+			grid-area: fuss;
+		}
+
+
+	</style>
+</head>
+<body>
+<header class="kopf"><h2>kopf</h2></header>
+<article class="inhalt"><h2>inhalt</h2>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+		magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+		gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+		elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+		eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+		dolor sit amet.</article>
+<nav class="navi"><h2>navi</h2></nav>
+<aside class="seite"><h2>seite</h2></aside>
+<footer class="fuss"><h2>fuss</h2></footer>
+</body>
+</html>
